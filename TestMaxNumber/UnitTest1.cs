@@ -9,23 +9,23 @@ namespace TestMaxNumber
         public void FirstPositionMax()
         {
             FindMax find = new FindMax();
-            double max = find.ReturnMax(5.5d, 4.4d, 3.2d);
-            Assert.AreEqual(5.5d, max);
+            string max = find.ReturnMax("TechMahindra", "Infosys", "HCL");
+            Assert.AreEqual("TechMahindra", max);
         }
 
         [Test]
         public void SecondPositionMax()
         {
             FindMax find = new FindMax();
-            double max = find.ReturnMax(4.4d, 5.5d, 3.2d);
-            Assert.AreEqual(5.5d, max);
+            string max = find.ReturnMax("Infosys", "TechMahindra","HCL");
+            Assert.AreEqual("TechMahindra", max);
         }
         [Test]
         public void ThirdPositionMax()
         {
             FindMax find = new FindMax();
-            double max = find.ReturnMax(3.2d, 4.4d, 5.5d);
-            Assert.AreEqual(5.5, max);
+            string max = find.ReturnMax("HCL", "Infosys", "TechMahindra");
+            Assert.AreEqual("TechMahindra", max);
         }
     }
 }

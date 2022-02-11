@@ -8,7 +8,7 @@ namespace FindMaximumProblem
 {
     public class FindMax
     {
-        public double ReturnMax ( double v1, double v2, double v3)
+        public string ReturnMax ( string v1, string v2, string v3)
         {
             if (v1.CompareTo(v2) > 0 &&  v1 .CompareTo(v3) > 0)
             {
