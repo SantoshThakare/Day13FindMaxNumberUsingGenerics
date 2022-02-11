@@ -10,8 +10,7 @@ namespace FindMaximumProblem
     {
         static void Main(string[] args)
         {
-            FindMax find = new FindMax();
-            find.ReturnMax();
+            
         }
     }
 }
