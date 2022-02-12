@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FindMaximumProblem
 {
-    public class FindMax
+    public class FindMax<T> where T : IComparable
     {
-        public T ReturnMax <T>( T v1, T v2, T v3) where T : IComparable
+        public T ReturnMax (T v1, T v2, T v3) 
         {
             if (v1.CompareTo(v2) > 0 &&  v1 .CompareTo(v3) > 0)
             {
