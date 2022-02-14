@@ -45,6 +45,11 @@ namespace FindMaximumProblem
             var Sorted_Values = Sort(value);
             return Sorted_Values[1];
         }
-       
+        public void PrintMax()
+        {
+            var print = MaxValue(this.value);
+            Console.WriteLine("Maximum Value is: " + print);
+        }
+
     }
 }
